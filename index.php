@@ -18,7 +18,7 @@
 ?>
 
 <?php include("includes/header.php")?>
-<?php require 'partials/header.php' ?>
+
 <?php if(!empty($user)): ?>
   <br> Welcome. <?= $user['email']; ?>
   <br>You are Successfully Logged In
