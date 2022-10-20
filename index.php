@@ -17,7 +17,7 @@
   }
 ?>
 
-<?php include("includes/header.php")?>
+<?php include("includesApp/header.php")?>
 
 <?php if(!empty($user)): ?>
   <br> Welcome. <?= $user['email']; ?>
@@ -31,4 +31,4 @@
     <button class="btn btn-warning"> <a href="signup.php">Register</a> </button>
 <?php endif; ?>
 
-<?php include("includes/footer.php")?>
+<?php include("includesApp/footer.php")?>

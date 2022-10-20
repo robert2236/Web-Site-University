@@ -19,7 +19,7 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
 }
 
 ?>
-<?php include("includes/header.php")?>
+<?php include("includesApp/header.php")?>
 <?php require 'partials/header.php' ?>
 <?php if(!empty($message)):?>
     <p><?=$message ?></p>
@@ -49,4 +49,4 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
 </div>
 </div>
 </div>
-<?php include("includes/footer.php")?>
+<?php include("includesApp/footer.php")?>

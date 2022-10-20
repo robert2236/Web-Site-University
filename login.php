@@ -26,7 +26,7 @@
 ?>
 
 
-<?php include("includes/header.php")?>
+<?php include("includesApp/header.php")?>
 <?php require 'partials/header.php' ?>
 <?php if(!empty($message)): ?>
       <p> <?= $message ?></p>
@@ -51,4 +51,4 @@
 </div>
 </div>
 </div>
-<?php include("includes/footer.php")?>
+<?php include("includesApp/footer.php")?>

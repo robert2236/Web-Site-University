@@ -1,28 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/CSS/app.css"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- FONTS -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
-    <title>Admin</title>
-</head>
-<body>
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Example label</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+<?php
+include("../db2.php")
+?>
+<?php include("../../includesApp/header.php")?>
+<div class="form-group">
+  <label for="exampleFormControlSelect1">Degree to obtain</label>
+    <select class="form-control" name="degree" >
+      <option>Information Technology</option>
+      <option>Systems Technology</option>
+      <option>Teleinformatics</option>
+      <option>Telecommunications Technology</option>
+      <option>Multimedia Engineering</option>
+      <option>Mechatronics Engineering</option>
+      <option>Electronic Engineering</option>
+      <option>Systems Engineering and Related</option>
+      <option>Aeronautical Engineering</option>
+    </select>
+    </div>
+    <div class="form-group">
+    <label for="exampleFormControlSelect1">Modality</label>
+    <select class="form-control" name="modality" >
+      <option>face-to-face</option>
+      <option>Blended</option>
+      <option>Online</option>
+    </select>
   </div>
   <div class="form-group">
-    <label for="formGroupExampleInput2">Another label</label>
-    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+    <label for="exampleFormControlSelect1">Turn</label>
+    <select class="form-control" name="turn" >
+      <option>Day</option>
+      <option>Afternoon</option>
+      <option>Night</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Title of the project</label>
+    <input type="text" class="form-control" name="title" >
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Project</label>
+    <textarea class="form-control" name="project"rows="2"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Student</label>
+    <input type="text" class="form-control" name="student">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Period</label>
+    <select class="form-control" name="period" >
+      <option>2022-3</option>
+      <option>2023-1</option>
+      <option>2023-2</option>
+      <option>2023-3</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Tutor</label>
+    <input type="text" class="form-control" name="tutor">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Start Date</label>
+<input type="date" name="start_date" step="1" min="2021-01-01" max="2030-12-31" value="<?php echo date("Y-m-d");?>">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">End Date</label>
+<input type="date" name="start_date" step="1" min="2021-01-01" max="2030-12-31" value="<?php echo date("Y-m-d");?>">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Date of Delivery</label>
+<input type="date" name="start_date" step="1" min="2021-01-01" max="2030-12-31" value="<?php echo date("Y-m-d");?>">
   </div>
 </form>
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-</body>
-</html>
+<?php include("../../includesApp/footer.php")?>
