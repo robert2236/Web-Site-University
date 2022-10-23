@@ -22,9 +22,9 @@ include("../db2.php")
   </div>
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Date of Birth</label>
-    <div class="input-append date" id="dp3" data-date="12-02-2012" name="date" data-date-format="dd-mm-yyyy">  <input class="span2" size="16" type="text" value="12-02-2012">  <span class="add-on"><i class="icon-th"></i></span></div>
+    <input type="date" name="date" step="1" min="2021-01-01" max="2030-12-31"  value="<?php echo date("Y-m-d");?>"> 
   </div>
-  <div class="form-group">
+  <div class="form-group">s
     <label for="exampleFormControlTextarea1">Direction</label>
     <input type="text" class="form-control" name="direction" placeholder="Example input">
   </div>
@@ -83,6 +83,6 @@ include("../db2.php")
     </select>
   </div>
   <button class=" btn btn-success" name="save_external_register">Guardar</button>
-  <button class=" btn btn-success" name="update">Regresar</button>
+  <button class=" btn btn-success" name="update">Back</button>
 </form>
 <?php include("../../includesApp/footer.php")?>

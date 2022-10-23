@@ -9,14 +9,14 @@ include("../db2.php")
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
         <?php session_unset(); } ?>
-<form action="save_task.php" method="POST">
+  <form action="../modules/save_task.php" method="POST">
   <div class="form-group">
     <label for="formGroupExampleInput">Activity</label>
-    <input type="text" class="form-control" name="activity" placeholder="career">
+    <input type="text" class="form-control" name="activity">
   </div>
   <div class="form-group">
   <label for="formGroupExampleInput">Observation</label>
-    <textarea class="form-control" name="observation" rows="6"></textarea>
+    <textarea class="form-control" name="observation" rows="4"></textarea>
   </div>
   <div class="form-group">
     <label for="formGroupExampleInput2">Start Date</label>

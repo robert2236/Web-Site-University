@@ -9,7 +9,7 @@ include("../db2.php")
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
         <?php session_unset(); } ?>
-<form action="save_task.php" method="POST">
+<form action="../modules/save_task.php" method="POST">
   <div class="form-group">
     <label for="formGroupExampleInput">Career</label>
     <input type="text" class="form-control" name="career" placeholder="career">
@@ -22,7 +22,7 @@ include("../db2.php")
     <label for="formGroupExampleInput">Observation</label>
     <input type="text" class="form-control" name="observation" placeholder="Example input">
   </div>
-  <button class=" btn btn-success" name="save_task" value="Save Task">save</button>
+  <button class=" btn btn-success" name="save_task_activity_log" value="Save Task">save</button>
   <button class=" btn btn-success" name="back">back</button>
 </form>
 <?php include("../../includesApp/footer.php")?>

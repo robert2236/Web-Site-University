@@ -9,7 +9,7 @@ include("../db2.php")
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
         <?php session_unset(); } ?>
-<form action="save_task.php" method="POST">
+  <form action="../modules/save_task.php" method="POST">
   <div class="form-group">
     <label for="formGroupExampleInput">Career</label>
     <select class="form-control" name="degree" >
@@ -36,7 +36,7 @@ include("../db2.php")
   </div>
   <div class="form-group">
   <label for="formGroupExampleInput">Observations</label>
-    <textarea class="form-control" name="observations" rows="3"></textarea>
+    <textarea class="form-control" name="observation" rows="3"></textarea>
   </div>
   <div class="form-group">
     <label for="exampleFormControlFile1">Attachments</label>

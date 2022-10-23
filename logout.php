@@ -5,7 +5,7 @@
 
   session_destroy();
 
-  header('Location: /university.php');
+  header('Location: login.php');
 ?>
 
 

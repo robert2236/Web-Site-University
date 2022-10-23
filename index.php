@@ -1,34 +1,30 @@
 <?php
-  session_start();
-
-  require 'database.php';
-
-  if (isset($_SESSION['user_id'])) {
-    $records = $conn->prepare('SELECT id, email, password FROM users WHERE id = :id');
-    $records->bindParam(':id', $_SESSION['user_id']);
-    $records->execute();
-    $results = $records->fetch(PDO::FETCH_ASSOC);
-
-    $user = null;
-
-    if (count($results) > 0) {
-      $user = $results;
-    }
-  }
+include("app/db2.php")
 ?>
+
 
 <?php include("includesApp/header.php")?>
 
-<?php if(!empty($user)): ?>
-  <br> Welcome. <?= $user['email']; ?>
-  <br>You are Successfully Logged In
-  <a href="logout.php">
-    Logout
-  </a>
-<?php else: ?>
-    <h1> Please Login or Signup</h1>
-    <button class="btn btn-success"> <a href="login.php">Login</a> </button>
-    <button class="btn btn-warning"> <a href="signup.php">Register</a> </button>
-<?php endif; ?>
+
+
+
+<!--notice-->
+
+<div class="row p-2">
+<?php
+        $query ="SELECT * FROM creation_of_news ";
+       $result_task = mysqli_query($conn,$query);
+       while($row =mysqli_fetch_array($result_task)){ ?>
+  <div class="col-sm-6 p-2">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title"><?php echo $row['title']?></h5>
+        <p class="card-text"><?php echo $row['description']?></p>
+        <a href="#" class="btn btn-primary">See more</a>
+      </div>
+    </div>
+  </div>
+  <?php } ?>
+ </div>
 
 <?php include("includesApp/footer.php")?>
