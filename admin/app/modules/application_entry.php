@@ -22,15 +22,15 @@ include("../db2.php")
       <option>Scores</option>
     </select>
   </div>
-  <div class="form-group">
+  <div class="form-group pb-15">
   <label for="formGroupExampleInput">Title</label>
     <textarea class="form-control" name="title" rows="3"></textarea>
   </div>
-  <div class="form-group">
+  <div class="form-group pb-15">
     <label for="formGroupExampleInput">Observation</label>
     <input type="text" class="form-control" name="observation" placeholder="Example input">
   </div>
-  <button class=" btn btn-success" name="save_task_application_entry" value="Save Task">save</button>
-  <button class=" btn btn-success" name="back">back</button>
+  <button class=" btn btn-success " name="save_task_application_entry" value="Save Task">save</button>
+  <button class=" btn btn-success " name="back">back</button>
 </form>
 <?php include("../../../includesApp/footer.php")?>

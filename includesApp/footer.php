@@ -4,7 +4,7 @@
 
 <div class="container-fluid">
   
-<div class="row p-5 bg-secondary text-white">
+<div class="row p-5 bg-secondary text-white mt-15">
   <div class="col-xs-12 col-md-6 col-lg-3">
   <div>
   <img src="../img/logo.png" class="card-img-top" style="width: 300px; height: 200px; alt="...">
