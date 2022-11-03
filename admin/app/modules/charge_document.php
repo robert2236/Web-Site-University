@@ -13,7 +13,7 @@ include("../db2.php")
         <?php session_unset(); } ?>
         <h1 style="text-align:center">Upload Document</h1>
 <form action="save_task.php" method="POST">
-<div class="card m-10" style="width: 70rem; display:flex; align-items:center; justify-content:center;">
+<div class="card m-10 p-5" style="width: 85rem; display:flex; align-items:center; justify-content:center;">
   <div class="form-group">
     <label for="exampleFormControlInput1">Tittle</label>
     <input type="text" class="form-control" style="width:30rem" name="title" >

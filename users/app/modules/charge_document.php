@@ -4,16 +4,16 @@ include("../db2.php")
 
 <?php include("../../../includesApp/header.php")?>
     
-    <h3 style="text-align:center">Charge Document</h3>
+    
     <?php if(isset($_SESSION['message'])) { ?>
         <div class="alert alert-<?=$_SESSION['message_type']?> alert-dismissible fade show" role="alert">
   <?= $_SESSION['message'] ?>
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
         <?php session_unset(); } ?>
-        <h1 style="text-align:center">Charge Document</h1>
+        <h1 style="text-align:center">Upload Document</h1>
 <form action="save_task.php" method="POST">
-<div class="card m-10" style="width: 70rem; display:flex; align-items:center; justify-content:center;">
+<div class="card m-10 p-5" style="width: 85rem; display:flex; align-items:center; justify-content:center;">
   <div class="form-group">
     <label for="exampleFormControlInput1">Tittle</label>
     <input type="text" class="form-control" style="width:30rem" name="title" >

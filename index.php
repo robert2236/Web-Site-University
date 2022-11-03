@@ -45,7 +45,7 @@ include("admin/app/db2.php")
 
 <!--notice-->
 
-<div class="row p-2">
+<div class="row p-3">
 <?php
         $query ="SELECT * FROM creation_of_news ";
        $result_task = mysqli_query($conn,$query);

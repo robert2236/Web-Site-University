@@ -11,7 +11,7 @@ include("../db2.php")
         <?php session_unset(); } ?>
         <h1 style="text-align:center">Creation Of News</h1>
 <form action="save_task.php" method="POST">
-<div class="card m-10" style="width: 70rem; display:flex; align-items:center; justify-content:center;">
+<div class="card m-10 p-5" style="width: 85rem; display:flex; align-items:center; justify-content:center;">
 <div class="form-group">
     <label for="formGroupExampleInput">Title</label>
     <input type="text" class="form-control" style="width:30rem" name="title" >
@@ -37,31 +37,31 @@ include("../db2.php")
   </div>
   <h4>Target audience</h4>
   <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="Tutor" style="width:30rem" name="target" id="flexCheckDefault">
+  <input class="form-check-input" type="checkbox" value="Tutor"  name="target" id="flexCheckDefault">
   <label class="form-check-label" for="flexCheckDefault">
     Tutor
   </label>
 </div>
 <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="Student" style="width:30rem" name="target" id="flexCheckDefault">
+  <input class="form-check-input" type="checkbox" value="Student" name="target" id="flexCheckDefault">
   <label class="form-check-label" for="flexCheckDefault">
     Student
   </label>
 </div>
 <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="Web Site" style="width:30rem" name="target" id="flexCheckDefault">
+  <input class="form-check-input" type="checkbox" value="Web Site" name="target" id="flexCheckDefault">
   <label class="form-check-label" for="flexCheckDefault">
     Web Site
   </label>
 </div>
 
-  <div class="form-group">
+  <div class="form-group pb-2">
     <label for="exampleFormControlFile1">Attachments</label>
     <input type="file" class="form-control-file" style="width:30rem" id="exampleFormControlFile1">
   </div>
   <div class="btn-group pb-2">
-  <button class=" btn btn-success" name="save_creation_news" value="Save">save</button>
-  <button class=" btn btn-success" name="back">back</button>
+  <button class=" btn btn-success me-3" name="save_creation_news" value="Save">save</button>
+  <a class=" btn btn-success" href="../../admin.php" name="back">back</a>
   </div>
 </form>
 <?php include("../../../includesApp/footer.php")?>

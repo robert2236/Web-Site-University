@@ -2,8 +2,7 @@
 include("../db2.php")
 ?>
 <?php include("../../../includesApp/header.php")?>
-     <h1>External Register</h1>
-     <h3>Personal Data</h3>
+    
      <br>
      <?php if(isset($_SESSION['message'])) { ?>
         <div class="alert alert-<?=$_SESSION['message_type']?> alert-dismissible fade show" role="alert">
@@ -13,7 +12,7 @@ include("../db2.php")
         <?php session_unset(); } ?>
      <h1 style="text-align:center">External Register</h1>
      <form action="save_task.php" method="POST">
-     <div class="card m-10" style="width: 70rem; display:flex; align-items:center; justify-content:center;">
+     <div class="card m-10 p-5" style="width: 85rem; display:flex; align-items:center; justify-content:center;">
     <div class="form-group">
     <label for="formGroupExampleInput">Name</label>
     <input type="text" class="form-control" style="width:30rem" name="name" >
@@ -45,7 +44,7 @@ include("../db2.php")
     <label for="exampleFormControlTextarea1">Email</label>
     <input type="text" class="form-control" style="width:30rem" name="email" >
   </div>
-  <div class="form-group">pe="text" class="form-control" style="width:30rem" name="phone" >
+  <div class="form-group" type="text" class="form-control" style="width:30rem" name="phone" >
   </div>
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Home Phone</label>

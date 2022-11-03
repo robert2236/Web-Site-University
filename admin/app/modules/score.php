@@ -8,9 +8,17 @@ include("../db2.php")
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
         <?php session_unset(); } ?>
-        <h1 style="text-align:center">Score</h1>
+        <h1 style="text-align:center">Ratings</h1>
      <form action="save_task.php" method="POST">
-     <div class="card m-10" style="width: 70rem; display:flex; align-items:center; justify-content:center;">
+     <div class="card m-10 p-5" style="width: 85rem; display:flex; align-items:center; justify-content:center;">
+     <div class="form-group">
+    <label for="formGroupExampleInput"> Student Code</label>
+    <input type="number" class="form-control" style="width:30rem" name="cod_student">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Grade</label>
+    <input type="text" class="form-control" style="width:30rem" name="grade">
+  </div>
   <div class="form-group">
     <label for="formGroupExampleInput">Principal Score</label>
     <input type="text" class="form-control" style="width:30rem" name="principal_score">
@@ -27,5 +35,6 @@ include("../db2.php")
   <button class=" btn btn-success me-3" name="save_score">Save</button>
   <a class=" btn btn-success" href="../../admin.php" name="back">back</a>
   </div>
+  <p class="p-3">
 </form>
 <?php include("../../../includesApp/footer.php")?>

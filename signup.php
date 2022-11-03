@@ -20,13 +20,12 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
   
 }
          
-
 ?>
 <?php include("includesApp/header.php")?>
 <?php if(!empty($message)):?>
     <p><?=$message ?></p>
     <?php endif; ?>
-<form action="<?php echo $_SERVER["PHP_SELF"];?>" method="POST">
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
 <div class="container pt-5" >
 <h1  style="margin-left:20%;">Signup</h1>
   <div class="mb-3">

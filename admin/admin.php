@@ -154,7 +154,7 @@ include("app/db2.php");
         </div>
         <div class="col py-3">
         <h1 style="text-align:center">Welcome Admin</h1>
-        <div class="card m-5 " style="width: 40rem;">
+        <div class="card m-4" style="width: 60rem;text-align:center;">
   <img src="../img/admin.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <p class="card-text">Administration of the Modules of the Degrees and Student Processes</p>
