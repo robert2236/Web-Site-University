@@ -198,4 +198,25 @@ $_SESSION['message'] = 'Task Saved succesfully';
 $_SESSION['message_type'] = 'success';
 header("Location: topic_entry.php");
 } 
+
+
+
+/*Application_Entry*/
+if (isset($_POST['save_task_application_entry'])){
+    $request = $_POST['request'];
+    $title = $_POST['title'];
+    $observation=$_POST['observation'];
+    
+    $query = "INSERT INTO application_entry(request,title,observation) 
+    VALUES ('$request','$title','$observation')";
+   $result = mysqli_query($conn,$query);
+   if(!$result){
+    die("Query Failed");
+}
+
+
+$_SESSION['message'] = 'Task Saved succesfully';
+$_SESSION['message_type'] = 'success';
+header("Location: application_entry.php");
+} 
 ?>

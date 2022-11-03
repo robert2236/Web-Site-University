@@ -1,8 +1,9 @@
 <?php
 include("../db2.php")
 ?>
-<?php include("../../../includesApp/header.php")?>
-<table class="table">
+<?php include("../includesAdmin/header.php")?>
+<h1 style="text-align:center">Application Entry Student</h1>
+<table class="table" >
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -22,14 +23,9 @@ include("../db2.php")
         <td><?php echo $row['degree']?></td>
         <td><?php echo $row['modality']?></td>
         <td><?php echo $row['observation']?></td>
-        <td>
-            <a href="edit.php?id=<?php echo $row['id']?>" class="btn btn-secondary"><i class="fa-solid fa-pen-to-square"></i></a>
-        </td>
-        <td>
-            <a href="../delete_task.php?id=<?php echo $row['id']?>" class="btn btn-danger"><i class="fa-solid fa-delete-left"></i></a>
-        </td>
+        
      </tr>
      <?php } ?>
   </tbody>
 </table>
-<?php include("../../../includesApp/footer.php")?>
+<?php include("../includesAdmin/footer.php")?>

@@ -9,14 +9,16 @@ include("../db2.php")
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
         <?php session_unset(); } ?>
+        <h1 style="text-align:center">Creation Of News</h1>
 <form action="save_task.php" method="POST">
+<div class="card m-10" style="width: 70rem; display:flex; align-items:center; justify-content:center;">
 <div class="form-group">
     <label for="formGroupExampleInput">Title</label>
-    <input type="text" class="form-control" name="title" >
+    <input type="text" class="form-control" style="width:30rem" name="title" >
   </div>
   <div class="form-group">
     <label for="formGroupExampleInput">Career</label>
-    <select class="form-control" name="career" >
+    <select class="form-control" style="width:30rem" name="career" >
       <option>Select an option</option>
       <option>Information Technology</option>
       <option>Systems Technology</option>
@@ -31,23 +33,23 @@ include("../db2.php")
   </div>
   <div class="form-group">
   <label for="formGroupExampleInput">Description</label>
-    <textarea class="form-control" name="description" rows="3"></textarea>
+    <textarea class="form-control" style="width:30rem" name="description" rows="3"></textarea>
   </div>
   <h4>Target audience</h4>
   <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="Tutor" name="target" id="flexCheckDefault">
+  <input class="form-check-input" type="checkbox" value="Tutor" style="width:30rem" name="target" id="flexCheckDefault">
   <label class="form-check-label" for="flexCheckDefault">
     Tutor
   </label>
 </div>
 <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="Student" name="target" id="flexCheckDefault">
+  <input class="form-check-input" type="checkbox" value="Student" style="width:30rem" name="target" id="flexCheckDefault">
   <label class="form-check-label" for="flexCheckDefault">
     Student
   </label>
 </div>
 <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="Web Site" name="target" id="flexCheckDefault">
+  <input class="form-check-input" type="checkbox" value="Web Site" style="width:30rem" name="target" id="flexCheckDefault">
   <label class="form-check-label" for="flexCheckDefault">
     Web Site
   </label>
@@ -55,9 +57,11 @@ include("../db2.php")
 
   <div class="form-group">
     <label for="exampleFormControlFile1">Attachments</label>
-    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+    <input type="file" class="form-control-file" style="width:30rem" id="exampleFormControlFile1">
   </div>
+  <div class="btn-group pb-2">
   <button class=" btn btn-success" name="save_creation_news" value="Save">save</button>
   <button class=" btn btn-success" name="back">back</button>
+  </div>
 </form>
 <?php include("../../../includesApp/footer.php")?>

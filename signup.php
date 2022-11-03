@@ -4,6 +4,7 @@ require 'database.php';
 
 $message = '';
 
+
 if (!empty($_POST['email']) && !empty($_POST['password'])) {
   $sql = "INSERT INTO users (email, password) VALUES (:email, :password)";
   $stmt =  $conn->prepare($sql);
@@ -12,41 +13,41 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
   $stmt->bindParam(':password', $password);
 
   if ($stmt->execute()) {
-    $message = 'Successfully created new user';
+    $message =  '<h2 style="text-align:center">Successfully created new user</h2>' ;
   } else {
     $message = 'Sorry there must have been an issue creating your account';
-  }
+  } 
+  
 }
+         
 
 ?>
 <?php include("includesApp/header.php")?>
-<?php require 'partials/header.php' ?>
 <?php if(!empty($message)):?>
     <p><?=$message ?></p>
     <?php endif; ?>
-
-<h1>Signup</h1>
-<div class="container p-4" >
-<div class="col-md-4">
-<div class="card card body mg">
-<form action="signup.php" method="POST">
+<form action="<?php echo $_SERVER["PHP_SELF"];?>" method="POST">
+<div class="container pt-5" >
+<h1  style="margin-left:20%;">Signup</h1>
   <div class="mb-3">
-  <input type="name" class="form-control input-log"  name="name" placeholder="Enter your first and last name">
+  <input type="name" class="form-control input-log" style="width:50%" name="name" placeholder="Enter your first and last name" Required>
   </div>
   <div class="mb-3">
-    <input type="email" class="form-control input-log"  name="email" placeholder="Enter your email">
+    <input type="email" class="form-control input-log" style="width:50%"  name="email" placeholder="Enter your email" Required>
   </div>
   <div class="mb-3 ">
-    <input type="password" class="form-control input-log" name="password" placeholder="Enter your password">
+    <input type="password" class="form-control input-log" style="width:50%" name="password" placeholder="Enter your password">
   </div>
   <div class="mb-3 ">
-    <input type="password" class="form-control input-log" name="confirm_password" placeholder="Confirm your password">
+    <input type="password" class="form-control input-log" style="width:50%" name="confirm_password" placeholder="Confirm your password">
   </div>
   <div class="mb-3 form-check">
   </div>
-  <button type="submit" class="btn btn-primary " value="submit" style="margin-bottom: 15px;" >Submit</button>
+  <button type="submit" class="btn btn-primary mb-5" style="margin-left:20%;"  value="submit" style="margin-bottom: 15px;" >Submit</button>
+  </div>
 </form>
-</div>
-</div>
-</div>
+
+
 <?php include("includesApp/footer.php")?>
+
+

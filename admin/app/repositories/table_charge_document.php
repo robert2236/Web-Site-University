@@ -1,7 +1,8 @@
 <?php
 include("../db2.php")
 ?>
-<?php include("../../../includesApp/header.php")?>
+<?php include("../includesAdmin/header.php")?>
+<h1 style="text-align:center">Charge Document</h1>
 <table class="table">
   <thead>
     <tr>
@@ -32,5 +33,5 @@ include("../db2.php")
      <?php } ?>
   </tbody>
 </table>
-<?php include("../../../includesApp/footer.php")?>
+<?php include("../includesAdmin/footer.php")?>
 

@@ -1,8 +1,9 @@
 <?php
 include("../db2.php")
 ?>
-<?php include("../../../includesApp/header.php")?>
-<table class="table">
+<?php include("../includesAdmin/header.php")?>
+<h1 style="text-align:center">Application Entry Student</h1>
+<table class="table" >
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -32,4 +33,4 @@ include("../db2.php")
      <?php } ?>
   </tbody>
 </table>
-<?php include("../../../includesApp/footer.php")?>
+<?php include("../includesAdmin/footer.php")?>

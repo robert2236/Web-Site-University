@@ -1,0 +1,40 @@
+/*----------------------------------------------------------animation--------------------------------------------------------------------------------------*/
+@keyframes cambiar {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  /*--------------------------------------------------------------------------------------------------------------------------------------------------*/
+  
+
+body  {
+    font-weight: 400;
+    overflow-x: hidden;
+    position: relative;
+    font-family: 'Centra', sans-serif !important;
+  background: linear-gradient(45deg ,purple, rgb(21, 203, 216), violet, rgb(24, 230, 5), rgb(250, 164, 6), rgb(233, 5, 5), rgb(9, 154, 250));
+  background-size: 400% 400%;
+    animation: cambiar 10s ease infinite;
+  
+  }
+
+  .card{
+    background: linear-gradient(60deg , rgb(21, 203, 216), violet, rgb(24, 230, 5), rgb(250, 164, 6), rgb(9, 154, 250));
+  background-size: 400% 400%;
+    animation: cambiar 5s ease infinite;
+  }
+
+
+.cw {
+  background-color: white  !important; 
+}
+
+.table{
+  background: white !important;
+}

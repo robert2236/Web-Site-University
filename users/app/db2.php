@@ -9,7 +9,8 @@ $conn =mysqli_connect(
     'app_university'
 );
 
-if(isset($conn)){
+//For test
+/*if(isset($conn)){
     echo 'is connected';
 }
-?>
+?>*/
